@@ -92,8 +92,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 1</h1>
-	</div>
+		<h1>Question 1</h1>  
+	</div> <!--I edited in the first question of the assignment and copied in the first code given to program a button-->
+	<!--I edited the code for the buttons and inputed the JavaScript part of the code to record the question respones to be able to calculate the probability of it being a cold or allergies-->
 	
     	<div id="content" class="w3-container">
         <p>Are your eyes watery or itchy?</p>   
@@ -105,15 +106,26 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <div class="page" id="two">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
-	</div>
+	</div> <!--I copied in the new question for question 2 and followed the previous steps of inputing the code to make a button that also keeps track of the question response-->
 	
 	<div id="content" class="w3-container">
 		<p>Do you have a fever?</p>
-		<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
-         	<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
+		<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
+         	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
 	</div>
 </div>	
-
+	
+<div class="page" id="three">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 3</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p>Do you have a sore throat?/p>
+		<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
+         	<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
+	</div>
+</div>	
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer>
