@@ -135,9 +135,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<!--There is still a pop up coming up at the top of the screen after one of the buttons is pressed so I am going to try to figure out how to stop those from happening-->
 	<div id="content" class="w3-container">
 		<p>Are your symptoms seasonal or chronic?</p>
-		<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
-         	<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
+		<a href="#results"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+         	<a href="#results"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
 	</div><!-- /content -->
+	<!--I realized that adding the results page for the output to be added on into might help with it not poping up on the screen so now I am going to try to put in the code for the results calculator-->
+</div>
+	 <p id="results">resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; </p>
+	var resultText = document.getElementById("results");
 	
 </div>	<footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
