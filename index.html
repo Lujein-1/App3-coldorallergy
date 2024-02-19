@@ -92,7 +92,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 1</h1>  
+		<h1>Question 1</h1>  <!--This is what is in the header-->
 	</div> <!--I edited in the first question of the assignment and copied in the first code given to program a button-->
 	<!--I edited the code for the buttons and inputed the JavaScript part of the code to record the question respones to be able to calculate the probability of it being a cold or allergies-->
 	
@@ -105,9 +105,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <div class="page" id="two">
 	<div class="w3-container w3-flat-carrot">
-		<h1>Question 2</h1>
+		<h1>Question 2</h1> <!--This is what is in the header-->
 	</div> <!--I copied in the new question for question 2 and followed the previous steps of inputing the code to make a button that also keeps track of the question response-->
-	
 	<div id="content" class="w3-container">
 		<p>Do you have a fever?</p>
 		<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
@@ -118,7 +117,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 <div class="page" id="three">
 	<div class="w3-container w3-flat-carrot">
-		<h1>Question 3</h1>
+		<h1>Question 3</h1> <!--This is what is in the header-->
 	</div>
 	
 	<div id="content" class="w3-container">
@@ -130,7 +129,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <div class="page" id="four">
 	<div class="w3-container w3-flat-carrot">
-		<h1>Question 4</h1>
+		<h1>Question 4</h1> <!--This is what is in the header-->
 	</div> <!--I just added the last question on the list of questions we required to ask and now I am going to test out the code to see if everything is working smoothly before I add the code for the results and before I add my last question in.-->
 		<!--There is still a pop up coming up at the top of the screen after one of the buttons is pressed so I am going to try to figure out how to stop those from happening-->
 	<div id="content" class="w3-container">
@@ -146,7 +145,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<h1>Question 5</h1> <!--This is what is in the header-->
 	</div>
 	<div id="content" class="w3-container">
-		<p>Are you experiencing chills?</p>
+		<p>Are you experiencing chills?</p> <!--The question I added as a symptom for cold-->
 		<a href="#six"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
          	<a href="#six"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
 	</div><!-- /content -->
@@ -154,18 +153,18 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <div class="page" id="six">
 	<div class="w3-container w3-flat-carrot">
-		<h1>Question 6</h1>
+		<h1>Question 6</h1> <!--This is what is in the header-->
 	</div>
 	<div id="content" class="w3-container">
-		<p>Are you experiencing body aches?</p>
-		<a href="#seven"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
-         	<a href="#seven"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
+		<p>Do you have itchy ears?</p> <!--The question I added as a symptom for allergies-->
+		<a href="#seven"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+         	<a href="#seven"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
 	</div><!-- /content -->
 </div>
 	
 <div class="page" id="seven">
 	<div class="w3-container w3-flat-carrot">
-		<h1>Results</h1>
+		<h1>Results</h1> <!--This is what is in the header-->
 	</div>
 	<div id="content" class="w3-containter">
 		<p id="results"></p>
@@ -183,7 +182,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<!--My first attempt at adding the results page was unsuccessful I am going to try to mirror more of what the previous coding was and try to be successful in at least making another page titled results-->
 	<!--I am about to try with the results page for the second time, I added the class page and copied some of the formatting of the previous pages coded, then I replaced the location of the var resultText = document.getElementById("results"); code up in the script with the other functions and I put two of the results tags and the last piece of code given in between them.-->
 	<!--The second time was also unsuccessful so I put all of the coding except one tag of the <p id="results"><p> up in the javascript section of the coding in between the <script> tags-->
-	
+	<!--I was able to figure out how to encorporate the javascript and html and make a button for the results with the help of a friend and I learned to be better able to see what the code is saying and find the flaws in the coding that I had-->
 	</div>	<footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer>
