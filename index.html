@@ -50,9 +50,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
         }
 
-	var resultText = document.getElementById("results");
-	<p id="results">resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
-</p>	
+	
 </script>
 
 
@@ -147,9 +145,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <div class="page" id="five">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
-	<p id="results">resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; 
-</p>
-		
+	 <p id="results"> resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent; </p>
+		<script>
+			var resultText = document.getElementById("results");
+ 		</script>
 	<!--My first attempt at adding the results page was unsuccessful I am going to try to mirror more of what the previous coding was and try to be successful in at least making another page titled results-->
 	<!--I am about to try with the results page for the second time, I added the class page and copied some of the formatting of the previous pages coded, then I replaced the location of the var resultText = document.getElementById("results"); code up in the script with the other functions and I put two of the results tags and the last piece of code given in between them.-->
 	<!--The second time was also unsuccessful so I put all of the coding except one tag of the <p id="results"><p> up in the javascript section of the coding in between the <script> tags-->
