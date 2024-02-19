@@ -44,7 +44,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             allergy_count = allergy_count + 1;  //I had an alert function here and that is why there was a pop up, I am removing the alert(allergy_count) and will run the code to see if the pop up keeps coming.
 
         }
-
+//Taking out the alert function stopped the pop up!
         function coldAdd(){
             cold_count = cold_count + 1;
         }
@@ -78,7 +78,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>Cold or Allergies?</h1>
+	<h1>Cold or Allergies?</h1> <!--This is what is in the header-->
 </div>
 	
 <div id="content" class="w3-container">
@@ -97,8 +97,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<!--I edited the code for the buttons and inputed the JavaScript part of the code to record the question respones to be able to calculate the probability of it being a cold or allergies-->
 	
     	<div id="content" class="w3-container">
-        <p>Are your eyes watery or itchy?</p>   
-		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+        <p>Are your eyes watery or itchy?</p> <!--The question we want to printed, the content-->
+		<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!--The buttons that will keep track of the yes's and no's to caclculate the probability of whether the person has a cold or if it is allergies--> 
          	<a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
 	</div><!-- /content -->
 </div>
@@ -108,8 +108,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<h1>Question 2</h1> <!--This is what is in the header-->
 	</div> <!--I copied in the new question for question 2 and followed the previous steps of inputing the code to make a button that also keeps track of the question response-->
 	<div id="content" class="w3-container">
-		<p>Do you have a fever?</p>
-		<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
+		<p>Do you have a fever?</p> <!--The question we want to printed, the content-->
+		<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a> <!--The buttons that will keep track of the yes's and no's to caclculate the probability of whether the person has a cold or if it is allergies--> 
          	<a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
 	</div><!-- /content -->
 		<!--There was a popup with numbers after pressing a button to answer a question and I realized I forgot to add the content part of the division and so I just added that to see if it will stop showing the popup at the page-->
@@ -121,8 +121,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div id="content" class="w3-container">
-		<p>Do you have a sore throat?</p>
-		<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
+		<p>Do you have a sore throat?</p> <!--The question we want to printed, the content-->
+		<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a> <!--The buttons that will keep track of the yes's and no's to caclculate the probability of whether the person has a cold or if it is allergies--> 
          	<a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
 	</div><!-- /content -->
 </div>	
@@ -133,8 +133,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div> <!--I just added the last question on the list of questions we required to ask and now I am going to test out the code to see if everything is working smoothly before I add the code for the results and before I add my last question in.-->
 		<!--There is still a pop up coming up at the top of the screen after one of the buttons is pressed so I am going to try to figure out how to stop those from happening-->
 	<div id="content" class="w3-container">
-		<p>Are your symptoms seasonal or chronic?</p>
-		<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+		<p>Are your symptoms seasonal or chronic?</p> <!--The question we want to printed, the content-->
+		<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!--The buttons that will keep track of the yes's and no's to caclculate the probability of whether the person has a cold or if it is allergies--> 
          	<a href="#five"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
 	</div><!-- /content -->
 	<!--I realized that adding the results page for the output to be added on into might help with it not poping up on the screen so now I am going to try to put in the code for the results calculator-->
@@ -146,7 +146,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	<div id="content" class="w3-container">
 		<p>Are you experiencing chills?</p> <!--The question I added as a symptom for cold-->
-		<a href="#six"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a>
+		<a href="#six"  onclick="coldAdd();" class="w3-btn w3-black"> Yes</a> <!--The buttons that will keep track of the yes's and no's to caclculate the probability of whether the person has a cold or if it is allergies--> 
          	<a href="#six"  onclick="allergyAdd();" class="w3-btn w3-black">No</a>
 	</div><!-- /content -->
 </div>
@@ -157,7 +157,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	<div id="content" class="w3-container">
 		<p>Do you have itchy ears?</p> <!--The question I added as a symptom for allergies-->
-		<a href="#seven"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a>
+		<a href="#seven"  onclick="allergyAdd();" class="w3-btn w3-black"> Yes</a> <!--The buttons that will keep track of the yes's and no's to caclculate the probability of whether the person has a cold or if it is allergies--> 
          	<a href="#seven"  onclick="coldAdd();" class="w3-btn w3-black">No</a>
 	</div><!-- /content -->
 </div>
